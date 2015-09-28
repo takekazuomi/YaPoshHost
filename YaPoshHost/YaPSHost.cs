@@ -41,7 +41,7 @@ namespace YaPoshHost
             // Do nothing.
         }
 
-        public override string Name { get; } = "WindowlessPosh";
+        public override string Name { get; } = "YaPoshHost";
         public override Version Version { get; } = new Version(0, 0, 1, 0);
         public override Guid InstanceId { get; } = Guid.NewGuid();
         public override PSHostUserInterface UI { get; }=new YaPSHostUserInterface();

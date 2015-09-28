@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Management.Automation;
 using System.Management.Automation.Runspaces;
 
@@ -24,6 +25,14 @@ namespace YaPoshHost
                 Console.WriteLine("no script file");
                 Environment.Exit(1);
             }
+            var scriptPath = Path.GetFullPath(args[0]);
+            if(!File.Exists(scriptPath))
+            {
+                Console.WriteLine("script file not exists");
+                Environment.Exit(1);
+            }
+
+
             var program = new Program();
             var host = new YaPSHost(program);
             using (var runSpace = RunspaceFactory.CreateRunspace(host))
@@ -36,7 +45,7 @@ namespace YaPoshHost
 
                     powershell.AddScript(@"Set-ExecutionPolicy Unrestricted -Scope Process");
 
-                    powershell.AddScript(args[0]);
+                    powershell.AddScript(scriptPath);
 
                     powershell.AddCommand("Out-Default");
 
