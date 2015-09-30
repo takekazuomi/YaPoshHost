@@ -6,5 +6,6 @@ $Host.UI.RawUI.WindowTitle="too looooooooooooooooooooooooooooooooooooooooooooooo
 $Host.UI.RawUI.WindowTitle
 
 Write-Host "Done"
+where.exe notepad
 
 

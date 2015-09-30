@@ -16,7 +16,7 @@ namespace PoshTest
 
     public class ProcessTest
     {
-        internal Process CreateProcess(string path, string arguments)
+        public Process CreateProcess(string path, string arguments)
         {
             var psi = new ProcessStartInfo
             {
@@ -47,7 +47,7 @@ namespace PoshTest
         [Test]
         public void CreateProcessNoWindowTest()
         {
-            using (var process = CreateProcess("powershell.exe", @"-NoProfile -NoLogo -ExecutionPolicy Unrestricted -File CreateProcessNoWindowTest.ps1"))
+            using (var process = CreateProcess("powershell.exe", @"-NoProfile -NoLogo -ExecutionPolicy Unrestricted -File scripts\broken3.ps1"))
             {
 
                 process.OutputDataReceived += (sender, eventArgs) => Console.Out.WriteLine(eventArgs.Data);

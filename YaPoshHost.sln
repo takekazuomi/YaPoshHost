@@ -7,6 +7,24 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YaPoshHost", "YaPoshHost\Ya
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoshTest", "PoshTest\PoshTest.csproj", "{69EF0B98-6AC1-4615-ACB8-34356FDF4CDA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreateProcess", "CreateProcess\CreateProcess.csproj", "{A349C1E4-3C1D-4E03-A2EB-CC8E4AEE2145}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApplication1", "WindowsFormsApplication1\WindowsFormsApplication1.csproj", "{C8627615-81A3-4E34-ADCA-32A1CBE71DEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Executor", "Executor\Executor.csproj", "{BF39D319-2B2A-4008-8341-8B7CC0E16479}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{8AF9F55D-6F4F-49CC-A373-37EE441AAFBD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{B7DD23F1-5E39-4933-9AC1-3EA56F007E8C}"
+	ProjectSection(SolutionItems) = preProject
+		scripts\broken1.ps1 = scripts\broken1.ps1
+		scripts\broken2.ps1 = scripts\broken2.ps1
+		scripts\broken3.ps1 = scripts\broken3.ps1
+		scripts\broken4.ps1 = scripts\broken4.ps1
+		scripts\broken5.ps1 = scripts\broken5.ps1
+		scripts\CreateProcessNoWindowTest.ps1 = scripts\CreateProcessNoWindowTest.ps1
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +39,22 @@ Global
 		{69EF0B98-6AC1-4615-ACB8-34356FDF4CDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69EF0B98-6AC1-4615-ACB8-34356FDF4CDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69EF0B98-6AC1-4615-ACB8-34356FDF4CDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A349C1E4-3C1D-4E03-A2EB-CC8E4AEE2145}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A349C1E4-3C1D-4E03-A2EB-CC8E4AEE2145}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A349C1E4-3C1D-4E03-A2EB-CC8E4AEE2145}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A349C1E4-3C1D-4E03-A2EB-CC8E4AEE2145}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8627615-81A3-4E34-ADCA-32A1CBE71DEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8627615-81A3-4E34-ADCA-32A1CBE71DEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8627615-81A3-4E34-ADCA-32A1CBE71DEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8627615-81A3-4E34-ADCA-32A1CBE71DEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF39D319-2B2A-4008-8341-8B7CC0E16479}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF39D319-2B2A-4008-8341-8B7CC0E16479}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF39D319-2B2A-4008-8341-8B7CC0E16479}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF39D319-2B2A-4008-8341-8B7CC0E16479}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AF9F55D-6F4F-49CC-A373-37EE441AAFBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AF9F55D-6F4F-49CC-A373-37EE441AAFBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AF9F55D-6F4F-49CC-A373-37EE441AAFBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AF9F55D-6F4F-49CC-A373-37EE441AAFBD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
