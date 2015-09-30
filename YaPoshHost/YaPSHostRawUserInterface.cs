@@ -45,6 +45,6 @@ namespace YaPoshHost
         public override Size MaxWindowSize { get; } = new Size(80, 25);
         public override Size MaxPhysicalWindowSize { get; } = new Size(80, 25);
         public override bool KeyAvailable { get; } = false;
-        public override string WindowTitle { get; set; } = "Windowsless Posh";
+        public override string WindowTitle { get; set; } = "YaPoshHost";
     }
 }
